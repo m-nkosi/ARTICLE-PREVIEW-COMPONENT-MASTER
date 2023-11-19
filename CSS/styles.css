@@ -12,6 +12,7 @@ body {
 #container {
     align-self: center;
     min-width:600px;
+    max-width: 665px;
     background-color: white;
     min-height: 45dvh;
     flex-basis: 50%;
@@ -86,4 +87,29 @@ p {
 #share > button:hover {
     background-color: hsl(217, 19%, 35%);
     color:white;
+}
+@media (min-width:100px) and (max-width:620px)
+{
+    #container {
+        min-width: 260px;
+        flex-direction: column;
+        flex-basis:90%;
+        min-height: 500px;
+        max-width: 350px;
+
+    }
+    #image {
+        min-height:200px;
+        /* flex-basis: %; */
+        background-position: unset;
+        background-position-y:-20px ;
+        border-radius: 10px 10px 0 0;
+        flex-grow: 1;
+    }
+    #main{
+        flex-grow: 1;
+    }
+    h1{
+        font-size:1.05rem;
+    }
 }
