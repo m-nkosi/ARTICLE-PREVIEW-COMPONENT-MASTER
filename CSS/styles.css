@@ -14,7 +14,7 @@ body {
     min-width:600px;
     max-width: 665px;
     background-color: white;
-    min-height: 45dvh;
+    /* min-height: 45dvh; */
     flex-basis: 50%;
     border-radius:10px;
     display:flex;
