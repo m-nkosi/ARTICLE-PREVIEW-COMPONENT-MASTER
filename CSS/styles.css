@@ -1,0 +1,89 @@
+body {
+    margin:0;
+    background-color:hsl(210, 46%, 95%);
+    font-size:13px;
+    font-family: 'Manrope', sans-serif;
+}
+#page {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+}
+#container {
+    align-self: center;
+    min-width:600px;
+    background-color: white;
+    min-height: 45dvh;
+    flex-basis: 50%;
+    border-radius:10px;
+    display:flex;
+}
+h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+    margin:0;
+}
+p {
+    font-family: 500;
+    color: hsl(214, 17%, 51%);
+}
+#image {
+    flex-basis: 30%;
+    background-image: url("/images/drawers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 250px;
+    border-radius:10px 0 0 10px;
+    background-position-x:-20px;
+ 
+}
+#main {
+    flex-basis: 55%;
+    padding:30px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+#profilePicture {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-image: url("/images/avatar-michelle.jpg");
+}
+#profile {
+    display: flex;
+
+}
+#lower {
+    display: flex;
+    justify-content: space-between;
+}
+#share {
+    align-self: center ;
+}
+#share > button {
+    border:none;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+#details {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#name > span {
+    font-weight: 700;
+    color:hsl(217, 19%, 35%);;
+}
+#date > span {
+    color:hsl(214, 17%, 51%);
+}
+#share > button:hover {
+    background-color: hsl(217, 19%, 35%);
+    color:white;
+}
