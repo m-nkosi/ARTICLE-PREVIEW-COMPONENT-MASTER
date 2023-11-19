@@ -12,13 +12,11 @@ body {
 #container {
     align-self: center;
     min-width:600px;
-    max-width: 650px;
+    max-width: 665px;
     background-color: white;
-    min-height:fit-content;
-    max-height: fit-content;
+    min-height: 45dvh;
     flex-basis: 50%;
     border-radius:10px;
-
     display:flex;
 }
 h1 {
@@ -32,13 +30,11 @@ p {
     color: hsl(214, 17%, 51%);
 }
 #image {
-    flex-basis: 40%;
+    flex-basis: 30%;
     background-image: url("/images/drawers.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 250px;
-    max-width: 288px;
-    max-height:310px;
     border-radius:10px 0 0 10px;
     background-position-x:-20px;
  
@@ -46,7 +42,6 @@ p {
 #main {
     flex-basis: 55%;
     padding:30px;
-    max-height: 250px;
     display: flex;
     flex-direction:column;
     justify-content: space-around;
