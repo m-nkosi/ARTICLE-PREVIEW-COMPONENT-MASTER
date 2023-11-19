@@ -105,6 +105,7 @@ p {
     }
     #image {
         min-height:200px;
+        min-width: 100%;
         /* flex-basis: %; */
         background-position: unset;
         background-position-y:-20px ;
