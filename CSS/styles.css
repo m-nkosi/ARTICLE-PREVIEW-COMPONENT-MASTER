@@ -39,7 +39,7 @@ p {
     background-position-x:-20px;
  
 }
-#main {
+.main {
     flex-basis: 55%;
     padding:30px;
     display: flex;
@@ -65,7 +65,7 @@ p {
 #share {
     align-self: center ;
 }
-#share > button {
+.share > button {
     border:none;
     width:40px;
     height: 40px;
@@ -84,9 +84,18 @@ p {
 #date > span {
     color:hsl(214, 17%, 51%);
 }
-#share > button:hover {
+.share > button:hover {
     background-color: hsl(217, 19%, 35%);
     color:white;
+}
+#socials {
+    display:flex;
+}
+.activeLower {
+    display:flex;
+    flex-direction: row;
+    background-color:hsl(217, 19%, 35%);
+    justify-content: space-evenly  ;
 }
 @media (min-width:100px) and (max-width:620px)
 {
@@ -108,10 +117,38 @@ p {
         border-radius: 10px 10px 0 0;
         flex-grow: 1;
     }
-    #main{
+    .main{
         flex-grow: 1;
     }
     h1{
         font-size:1.05rem;
     }
+    #socials {
+        width:60%;
+        justify-content: space-around;
+    }
+    #socials > div {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    #activeLowerMobile {
+        height:65px;
+        border-radius: 0 0 10px 10px;
+        display:none;
+    }
+    .activatedMain {
+        padding-bottom: 0px;
+    }
+    #shareText {
+        letter-spacing: 3px;
+        font-weight: 500;
+        color:hsl(214, 17%, 51%);
+    }
+    .share {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+   
 }
