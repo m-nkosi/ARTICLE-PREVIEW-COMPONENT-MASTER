@@ -71,7 +71,7 @@ p {
     width:30px;
     height: 30px;
     border-radius: 50%;
-
+    background-color: hsl(210, 46%, 95%);
 }
 #details {
     display:flex;
