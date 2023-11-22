@@ -11,7 +11,7 @@ body {
 }
 #container {
     align-self: center;
-    min-width:600px;
+    min-width:650px;
     max-width: 665px;
     background-color: white;
     /* min-height: 45dvh; */
@@ -68,8 +68,8 @@ p {
 }
 #share > button {
     border:none;
-    width:40px;
-    height: 40px;
+    width:30px;
+    height: 30px;
     border-radius: 50%;
 
 }
@@ -85,11 +85,21 @@ p {
 #date > span {
     color:hsl(214, 17%, 51%);
 }
-#share > button:hover {
+.share > button:hover {
     background-color: hsl(217, 19%, 35%);
     color:white;
 }
+#arrowHead {
+    width:20px;
+    z-index: -1;
+    height: 20px;
+    background-color: hsl(217, 19%, 35%);
+    position: absolute;
+    bottom: -20%;
+    transform: rotate(45deg);
+}
 .activeMode{
+    z-index:2;
     position: absolute;
     display: flex;
     justify-content: space-evenly;
@@ -100,10 +110,9 @@ p {
     width:220px;
     height: 45px;
     border-radius: 5px;
-    box-shadow: -2px 2px 10px hsl(214, 17%, 51%);
-    top:-60px;
+    top:-200%; 
     letter-spacing: 3px;
-    left:250px;
+    left:130%;
 }
 .activeMode > div {
     align-self: center;
