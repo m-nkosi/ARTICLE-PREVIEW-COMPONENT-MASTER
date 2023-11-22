@@ -118,6 +118,12 @@ p {
 .activeMode > div {
     align-self: center;
 
+}
+.activeModeMobile {
+    position: relative;
+    height: 100%;
+    left:0%;
+    top:0%;
 
 }
 @media (min-width:100px) and (max-width:620px)
@@ -142,6 +148,16 @@ p {
     }
     .main{
         flex-grow: 1;
+    }
+    .activeMainMobile {
+        padding-bottom: 0px;
+    }
+    .activeMobile {
+        height: 80px;
+        border-radius: 0 0 10px 10px;
+        justify-content: space-evenly;
+        background-color: hsl(217, 19%, 35%);
+        display: none;
     }
     h1{
         font-size:1.05rem;
