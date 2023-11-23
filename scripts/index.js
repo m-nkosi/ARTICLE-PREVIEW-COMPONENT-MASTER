@@ -39,7 +39,7 @@ $("#activateButton").click(() => {
             $(".main").removeClass("activeMainMobile");
             $(".activeMobile").css("display", "none");
             $("#lower").append($(".share"));
-            $("#profilePicture").prepend($(".activeMode"));
+            $(".share").append($(".activeMode"));
             $("#arrowHead").show();
             $(".activeMode").removeClass("activeModeMobile");
             $(".activeMode").hide();

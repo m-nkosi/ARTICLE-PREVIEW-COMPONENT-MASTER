@@ -113,7 +113,7 @@ p {
     border-radius: 5px;
     top:-200%; 
     letter-spacing: 3px;
-    left:130%;
+    right:-350%;
 }
 .activeMode > div {
     align-self: center;
