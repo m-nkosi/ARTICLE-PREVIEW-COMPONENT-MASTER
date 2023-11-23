@@ -1,6 +1,14 @@
 $(".activeMode").hide();
 
+var view_width = $(window).width();
+var initialState;
 
+if (view_width > 620)
+{
+    initialState = "mobile";
+}else {
+    initialState = "desktop";
+}
 // active the active mode when the button is clicked
 
 $("#activateButton").click(() => {
@@ -16,7 +24,6 @@ $("#activateButton").click(() => {
         }else {
             // switching off active mode
             $(".activeMode").fadeOut();
-            console.log("1")
             // change the background color back
             $("#activateButton").css("background-color", "hsl(210, 46%, 95%)");
     
@@ -53,7 +60,7 @@ $("#activateButton").click(() => {
 // transition for active modes
 $(window).resize(() => {
     // when resizing the screen
-    if ($(window).width() > 620 && ($(".activeModeMobile").length === 1))
+    if ($(window).width() > 620 && ($(".activeModeMobile").length === 1) && initialState != "desktop")
     {
         // transition into desktop while in active mode
         // first switch of the active mode
@@ -69,12 +76,12 @@ $(window).resize(() => {
         $(".activeMode").fadeIn();
         // change the background color of the button to match it
         $("#activateButton").css("background-color", "hsl(217, 19%, 35%)");
-    }else if ($(window).width() <= 620 && !$(".activeMode").is(":hidden"))
+        initialState = "desktop";
+    }else if ($(window).width() <= 620 && !$(".activeMode").is(":hidden") && initialState != "mobile")
     {
         // switching from desktop active mode to mobile active mode
         // switch of the desktop active mode
         $(".activeMode").fadeOut();
-        console.log("1")
         // change the background color back
         $("#activateButton").css("background-color", "hsl(210, 46%, 95%)");
         // switch on the mobile active mode
@@ -89,6 +96,7 @@ $(window).resize(() => {
         $(".activeMode").css("height", "100%");
         $("#arrowHead").hide();
         $(".activeMode").fadeIn();
+        initialState = "mobile";
         
 
     } 
