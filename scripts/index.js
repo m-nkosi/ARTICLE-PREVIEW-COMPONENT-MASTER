@@ -57,7 +57,6 @@ $(window).resize(() => {
     {
         // transition into desktop while in active mode
         // first switch of the active mode
-        console.log("1");
         $("#lower").show();
         $(".main").removeClass("activeMainMobile");
         $(".activeMobile").css("display", "none");
@@ -70,6 +69,27 @@ $(window).resize(() => {
         $(".activeMode").fadeIn();
         // change the background color of the button to match it
         $("#activateButton").css("background-color", "hsl(217, 19%, 35%)");
+    }else if ($(window).width() <= 620 && !$(".activeMode").is(":hidden"))
+    {
+        // switching from desktop active mode to mobile active mode
+        // switch of the desktop active mode
+        $(".activeMode").fadeOut();
+        console.log("1")
+        // change the background color back
+        $("#activateButton").css("background-color", "hsl(210, 46%, 95%)");
+        // switch on the mobile active mode
+        $("#lower").hide();
+        $(".main").addClass("activeMainMobile");
+        $(".activeMobile").css("display", "flex");
+        $(".activeMobile").append($(".share"));
+        $(".share > button").css("background-color", "hsl(210, 46%, 95%)");
+        // adding the socials
+        $(".activeMobile").prepend($(".activeMode"));
+        $(".activeMode").addClass("activeModeMobile");
+        $(".activeMode").css("height", "100%");
+        $("#arrowHead").hide();
+        $(".activeMode").fadeIn();
+        
 
-    }
+    } 
 })
