@@ -98,6 +98,5 @@ $(window).resize(() => {
         $(".activeMode").fadeIn();
         initialState = "mobile";
         
-
     } 
 })

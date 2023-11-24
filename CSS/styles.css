@@ -192,5 +192,10 @@ p {
         flex-direction: column;
         justify-content: center;
     }
-   
+    #arrowHead {
+        display:none;
+    }
+    .activeMode {
+       box-shadow: unset;
+    }
 }
