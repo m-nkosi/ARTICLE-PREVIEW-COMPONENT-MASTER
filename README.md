@@ -42,8 +42,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/m-nkosi/ARTICLE-PREVIEW-COMPONENT-MASTER)
+- Live Site URL: [Live](https://clinquant-biscotti-419ab2.netlify.app)
 
 ## My process
 
@@ -83,7 +83,7 @@ Users should be able to:
 
 ## Author
 
-- Github - [Mxolisi Nkosi]()
-- Frontend Mentor - [@TheProgrammer](https://www.frontendmentor.io/profile/TheProgrammer2360)
+- Github - [Mxolisi Nkosi](https://github.com/m-nkosi)
+- Frontend Mentor - [@m-nkosi](https://www.frontendmentor.io/profile/m-nkosi)
 
 
